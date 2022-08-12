@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <style>
+      @font-face {
+        font-family: pacfontregular;
+        src: url(pacfont.regular.ttf);
+      }
+      @font-face {
+        font-family: retro;
+        src: url(arcadeclassic.regular.ttf);
+      }
+      body {
+        background-color: black;
+        color: white;
+        font-family: pacfontregular;
+        font-size: x-large;
+        height: 500px;
+        width: 500px;
+        margin: auto;
+        text-align: center;
+        box-shadow: 0px 0px 20px 10px blue;
+      }
+      h1 {
+        padding-top: 30px;
+        text-shadow: 10px 10px blue;
+      }
+      h2 {
+        font-family: retro;
+        font-size: x-large;
+      }
+      .guesses button {
+        width: 60px;
+        height: 50px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 4px 2px white;
+        background-color: black;
+        color: white;
+        font-size: larger;
+        font-family: retro;
+      }
+      input {
+        height: 50px;
+        width: 140px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: retro;
+        font-size: medium;
+      }
+      #submit {
+        height: 50px;
+        border-radius: 10px;
+        font-family: retro;
+        font-size: medium;
+        margin-bottom: 20px;
+      }
+      #restart,
+      #hint {
+        height: 40px;
+        border-radius: 10px;
+        font-family: retro;
+        font-size: medium;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Guessing Game</h1>
+    <h2 id="gameText">Guess a number between 0 - 100</h2>
+    <div class="guesses">
+      <button id="guess1">?</button>
+      <button id="guess2">?</button>
+      <button id="guess3">?</button>
+      <button id="guess4">?</button>
+      <button id="guess5">?</button>
+    </div>
+    <br />
+    <br />
+    <input type="text" id="guess" placeholder="enter guess here" />
+    <button id="submit">Guess</button>
+    <br />
+    <button id="restart">Play Again</button>
+    <button id="hint">Hint</button>
+    <h2 id="hintText"></h2>
+  </body>
+</html>
